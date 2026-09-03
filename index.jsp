@@ -153,6 +153,28 @@
     String invoiceNumber = "INV-" + new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
     DecimalFormat df = new DecimalFormat("0.00");
     boolean invoiceGenerated = request.getParameter("customerName") != null;
+
+    // Save transaction to database if an invoice was just generated
+    if (invoiceGenerated) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/varatech_db", "root", "");
+            String sql = "INSERT INTO sales (invoice_no, customer_name, phone, total_items, grand_total, sale_date) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement pstmt = con2.prepareStatement(sql);
+            
+            pstmt.setString(1, invoiceNumber);
+            pstmt.setString(2, customerName);
+            pstmt.setString(3, phone);
+            pstmt.setInt(4, totalItems);
+            pstmt.setDouble(5, grandTotal);
+            pstmt.setString(6, currentDate + " " + currentTime);
+            
+            pstmt.executeUpdate();
+            con2.close();
+        } catch (Exception e) {
+            out.println("<p style='color:red; text-align:center;'>Sales Logging Error: " + e.getMessage() + "</p>");
+        }
+    }
 %>
 
 <!DOCTYPE html>
@@ -595,4 +617,4 @@
     <% } %>
 </div>
 </body>
-</html>
+</html>g
