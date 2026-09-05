@@ -2,3 +2,4 @@
 
 - [🔐 Login Page](https://varatech-billing-system.onrender.com/Login.jsp)
 - [🧾 Billing System](https://varatech-billing-system.onrender.com/index.jsp)
+- [📊 Admin Dashboard](https://varatech-billing-system.onrender.com/admin.jsp)
