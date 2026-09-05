@@ -4,6 +4,9 @@
 
 Start **Apache Tomcat 10.1.59** and make sure the `Billing` project is inside the `webapps` folder.
 
+Username: admin
+Password: varatech
+
 Then open:
 
 - [🔐 Login Page](http://localhost:8080/Billing/Login.jsp)
