@@ -1,21 +1,5 @@
-## 🌐 Application Access
+## 🌐 Live Application
 
-### Local Application
-
-Start **Apache Tomcat 10.1.59** and make sure the `Billing` project is inside the `webapps` folder.
-
-Username: admin
-Password: varatech
-
-Then open:
-
-- [🔐 Login Page](http://localhost:8080/Billing/Login.jsp)
-- [🧾 Smart Billing System](http://localhost:8080/Billing/index.jsp)
-- [📊 Admin Dashboard](http://localhost:8080/Billing/admin.jsp)
-
-### Project Repository
-
-- [📁 View Source Code on GitHub](https://github.com/sreevaraprasad16/VaraTech-Billing-System)
-
-> **Note:** The `localhost` links work when Apache Tomcat is running on your computer.  
-> GitHub cannot directly run JSP files.
+- [🔐 Login Page](https://varatech-billing-system.onrender.com/Login.jsp)
+- [🧾 Billing System](https://varatech-billing-system.onrender.com/index.jsp)
+- [📊 Admin Dashboard](https://varatech-billing-system.onrender.com/admin.jsp)
