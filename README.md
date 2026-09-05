@@ -10,7 +10,7 @@ A dynamic, session-secured web-based billing and invoice generation system built
 * **Session Management & Logout**: Secure session destruction and a clean logout confirmation portal.
 
 ## Default Admin Credentials
-* **Username**: `Vara`
+* **Username**: `Vara'
 * **Password**: `varatech`
 
 ## Technology Stack
