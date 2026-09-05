@@ -36,3 +36,18 @@ A dynamic, session-secured web-based billing and invoice generation system built
 - [📊 Admin Dashboard](https://varatech-billing-system.onrender.com/admin.jsp)
 - [🧾 Billing System](https://varatech-billing-system.onrender.com/index.jsp)
 -  [🚪 Logout Page](https://varatech-billing-system.onrender.com/logout.jsp)
+
+-  ## 🌐 Local Application
+
+- [🔐 Login Page](http://localhost:8080/Billing/Login.jsp)
+- [📊 Admin Dashboard](http://localhost:8080/Billing/admin.jsp)
+- [🧾 Billing System](http://localhost:8080/Billing/index.jsp)
+- [🚪 Logout Page](http://localhost:8080/Billing/logout.jsp)
+
+> These links work when Apache Tomcat is running locally.
+
+## 🚀 Online Application
+
+[🌐 Open VaraTech Billing System](https://varatech-billing-system.onrender.com)
+
+> The online version requires the Render deployment to be running correctly.
